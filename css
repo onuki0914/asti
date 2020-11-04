@@ -1,0 +1,583 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	height: 160px;
+	width: 100%;
+	padding: 24px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: white;
+}
+
+.ht {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.ht-l {
+	position: relative;
+	width: 60px;
+	height: 21px;
+	
+}
+
+.ht-l:before {
+	content:"";
+	height: 21px;
+	position: absolute;
+	padding-right: 40px;
+	border-bottom: 1px solid black;
+}
+
+.ht-l:after {
+	content:"";
+	height: 10px;
+	position: absolute;
+	padding-right: 60px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.ht-r {
+	display: flex;
+}
+
+.hb {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 30px;
+}
+
+.hb a {
+	margin-left: 42px;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	color: black;
+}
+
+.ht-r li {
+	margin-left: 30px;
+	font-size: 13px;
+}
+
+.style:after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-bottom: 3px;
+  background-image: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/instagram.svg);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.reserve:after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-bottom: 3px;
+  background-image: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/list-menu.svg);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+
+.top-image {
+	margin: 160px 80px 0 80px;
+
+}
+
+.top-image img {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+.scroll {
+	text-align:center;
+	margin-top: 5px;
+}
+
+.scroll img {
+	height: 120px;
+	width: 1px;
+}
+
+.concept {
+	text-align: center;
+	margin-top: 160px;
+}
+
+.concept h2 {
+	margin-bottom: 40px;
+}
+
+.concept p {
+	font-size: 14px;
+	line-height: 32px;
+}
+
+.sub-title:before {
+	content: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/diagonal-line.svg);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding-right: 30px;
+}
+
+.sub-title:after {
+	content: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/diagonal-line.svg);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding-left: 30px;
+}
+
+.sub-title {
+	font-size: 18px;
+	letter-spacing: 0.4em;
+	position: relative;
+	color: #404040;
+}
+
+.salon {
+	text-align: center;
+	margin-top: 160px;
+}
+
+.salon-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 80px 0 80px;
+	letter-spacing: 0.2em;
+}
+
+.salon-info img {
+	width: 90%;
+	height: auto;
+}
+
+.sal-title {
+	font-size: 16px;
+	line-height: 32px;
+	margin-top: 20px;
+	color: #4D4D4D;
+}
+
+.sal ul {
+	display: flex;
+	justify-content: center;
+	font-size: 10px;
+}
+
+.sal a {
+	padding: 12px 16px 6px 16px;
+	margin: 10px;
+	display: block;
+	color: #AAAAAA;
+	border-top: 1px solid #AAAAAA;
+}
+
+.in-img:after {
+	content: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/tri_blk.svg);
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding-left: 15px;
+}
+
+.re-img:after {
+	content: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/blank.svg);
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding-left: 15px;
+}
+
+.staff {
+	text-align: center;
+	margin: 160px auto 0 auto;
+}
+
+.all {
+	display: inline-block;
+	margin-top: 40px;
+	margin: 20px auto;
+	color: #404040;
+	background-color: #EEEEEE;
+	padding: 8px 18px 8px 18px;
+	border-radius: 30px;
+	font-size:10px;
+	text-align: center;
+}
+
+.all:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right:10px; 
+  margin-bottom: 2px;
+  background-image: url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/list-menu.svg);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.staff-info {
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 40px 80px 0 80px;
+	letter-spacing: 0.2em;
+}
+
+.staff-info img {
+	width: 90%;
+	height: auto;
+}
+
+
+.staf {
+	width: 33%;
+	box-sizing: border-box;
+}
+
+.staf p {
+	font-size: 13px;
+	color: #D6D6D6;
+	margin-top: 16px;
+}
+
+.staf h3 {
+	font-size: 14px;
+	color: #4D4D4D;
+	margin-top: 10px;
+}
+
+.fu {
+	margin-top: 24px;
+}
+
+.news {
+	text-align: center;
+	margin-top: 160px;
+}
+
+.news-info {
+	display: flex; 
+	justify-content: left;
+	margin: 40px 80px 0 80px;
+	letter-spacing: 0.2em;
+}
+
+.new {
+	width: 25%
+}
+
+.news-info img {
+	width: 90%;
+	height: auto;
+}
+
+.date {
+	line-height: 20px;
+	font-size: 10px;
+	margin-top: 10px;
+	color: #AAAAAA;
+}
+
+.message {
+	width: 90%;
+	font-size: 13px;
+	text-align: left;
+	color: #4D4D4D;
+	margin: 0 auto;
+	letter-spacing: 0.1em;
+}
+
+.product {
+	margin-top: 160px;
+}
+
+.product-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 80px 0 80px;
+	letter-spacing: 0.2em;
+	color: #404040;
+}
+
+.t-1 {
+	margin-right: 40px;
+}
+
+.t-2 {
+	margin-left: 40px;
+}
+
+
+.product-top {
+	position: relative;
+	height: 620px;
+}
+
+.left:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 80%;
+	width: 80%;
+	z-index: -1;
+    background:linear-gradient(150deg,#fff,#dfe9f3);
+}
+
+.right:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 80%;
+	width: 80%;
+	z-index: -1;
+    background: linear-gradient(150deg,#fff,#f3e7e9);
+}
+
+.left:before {
+	content: "PLUMM ORGANIC SERUM";
+	position: absolute;
+	writing-mode: vertical-rl;
+	right: 2%;
+	top: 15%;
+	font-size: 10px;
+	color: #D6E6F1;
+}
+
+.right:before {
+	content: "ORGANIC WAX SERUM";
+	position: absolute;
+	writing-mode: vertical-rl;
+	right: 2%;
+	top: 15%;
+	font-size: 10px;
+	color: #F3E1D5;
+}
+
+.product h2 {
+	text-align: center;
+}
+
+.p-content {
+	position: absolute;
+	top: 150px;
+}
+
+.produc img {
+    position: absolute;
+    right: 0;
+}
+
+.produc a {
+	font-size: 10px;
+	color: #AAAAAA;
+	padding: 4px 8px;
+	display: inline-block;
+	margin-bottom: 16px;
+	background-color: #F8F8F8;
+}
+
+.product h3 {
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 0.12em;
+}
+
+.product-bottom {
+	font-size: 14px;
+	height: 188px;
+	text-align: center;
+}
+
+.product-bottom p {
+	text-align: left;
+	letter-spacing: 0.1em;
+	line-height: 28px;
+}
+
+.product-bottom a {
+	margin-top: 40px;
+	color: #404040;
+	background-color: #EEEEEE;
+	padding: 8px 18px 8px 38px;
+	border-radius: 30px;
+}
+
+.p-name {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.p-cash {
+    line-height: 24px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.p-smell {
+    line-height: 20px;
+    font-size: 10px;
+    margin-top: 8px;
+    color: #AAAAAA;
+}
+
+.shop:before {
+	content:url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/cart.svg);
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding-right: 15px;
+}
+
+.link {
+	margin: 160px 80px 80px 80px;
+	background-color: #F8F8F8;
+	padding: 60px;
+}
+
+.link ul {
+	display: flex;
+	justify-content: space-between;
+    font-size: 14px;
+}
+
+.link li {
+	width: 48%;
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	padding: 40px;
+	line-height: 32px;
+}
+
+.link a {
+	color: #4D4D4D;
+}
+
+.sty-img:before {
+	content:url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/instagram-g.svg);
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin-bottom: 4px;
+	padding-right: 15px;
+	background-size: contain;
+  	vertical-align: middle;
+}
+
+.blo-img:before {
+	content:url(https://asti-hair.jp/wp-content/themes/asti__ver00/common/img/icon/news-g.svg);
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin-bottom: 4px;
+	padding-right: 15px;
+	background-size: contain;
+  	vertical-align: middle;
+}
+
+.footer-top {
+	height: 150px;
+	margin: 0 80px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EEEEEE
+}
+
+.ft-r {
+	display: flex;
+}
+
+.ft-r li {
+	margin-left:30px;
+	font-size: 14px;
+}
+
+.ft-r a {
+	color: #4D4D4D;
+}
+
+.ft-gizi {
+	color:#AAAAAA;
+}
+
+.ft-gizi:after {
+	content: "";
+	display: inline-block;
+	width: 60px;
+	margin-left: 30px;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+
+.ft-l img {
+	width: 120px;
+	height: 30px;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 80px;
+	align-items: center;
+	padding: 50px;
+	background-color: #F8F8F8;
+	color: #AAAAAA;
+	font-size: 13px;
+}
+
+.fb-l {
+	display: flex;
+	justify-content: space-around;
+}
+
+.fb-l li {
+	margin: 0 10px;
+}
+
+.fb-l a {
+	color: #AAAAAA;
+}
+
+.fb-l li:before {
+	content: "・";
+}
